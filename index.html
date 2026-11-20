@@ -1057,7 +1057,7 @@
 
   <div class="garland" aria-hidden="true"></div>
 
-  <section id="food" class="fade">
+     <section id="food" class="fade">
     <div class="section-header-row">
       <h2 class="section-title">Где поесть и выпить кофе</h2>
       <button class="toggle-section-btn" id="toggle-food-btn" title="Скрыть/показать карточки">
@@ -1068,6 +1068,7 @@
 
     <div class="grid-wrapper" id="food-wrapper">
       <div class="infra-modern-grid">
+        <!-- 1-я карточка: Бургер Кинг -->
         <div class="infra-card" data-modal="food1" data-fav="food1">
           <button class="fav-btn" data-fav="food1">☆</button>
           <div class="infra-card-img"><img src="images/food-burgerking.jpg" alt="Бургер Кинг" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
@@ -1076,26 +1077,29 @@
             <h3>Бургер Кинг</h3>
           </div>
         </div>
+
+        <!-- 2-я карточка: Вкусно и точка (картинка от Точки вкуса) -->
+        <div class="infra-card" data-modal="food3" data-fav="food3">
+          <button class="fav-btn" data-fav="food3">☆</button>
+          <div class="infra-card-img"><img src="images/food-tochka-vkusa.jpg" alt="Вкусно и точка" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
+          <div class="infra-card-content">
+            <span class="infra-tag">Фастфуд</span>
+            <h3>Вкусно и точка</h3>
+          </div>
+        </div>
+
+        <!-- 3-я карточка: Точка вкуса (картинка от Вкусно и точка) -->
         <div class="infra-card" data-modal="food2" data-fav="food2">
           <button class="fav-btn" data-fav="food2">☆</button>
-          <div class="infra-card-img"><img src="images/food-tochka-vkusa.jpg" alt="Точка вкуса" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
+          <div class="infra-card-img"><img src="images/food-biryuzova-32.jpg" alt="Точка вкуса" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
           <div class="infra-card-content">
             <span class="infra-tag">Столовая</span>
             <h3>Точка вкуса</h3>
           </div>
         </div>
-        <div class="infra-card" data-modal="food3" data-fav="food3">
-          <button class="fav-btn" data-fav="food3">☆</button>
-          <div class="infra-card-img"><img src="images/food-biryuzova-32.jpg" alt="Кафе на Бирюзова" loading="lazy" decoding="async" onerror="this.style.display='none'"></div>
-          <div class="infra-card-content">
-            <span class="infra-tag">Кафе</span>
-            <h3>Кафе на Бирюзова, 32</h3>
-          </div>
-        </div>
       </div>
     </div>
   </section>
-
   <div class="garland" aria-hidden="true"></div>
 
   <section id="sport" class="fade">
@@ -1382,7 +1386,7 @@
       <div class="conc-card">
         <div class="conc-card-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zM12 6v6l4 2"/></svg></div>
         <h3>Личная характеристика</h3>
-        <p>Октябрьское Поле — практичный и обжитой район «для жизни», а не «для картинки». Здесь есть старая застройка, новые ЖК и зелёные зоны; инфраструктура сложилась, а не обещана. Он подходит студентам, семьям и работающим людям, которым важны метро, магазины и школы рядом с домом, а не только вид из окна.</p>
+        <p>Октябрьское Поле — практичный и обжитый район «для жизни», а не «для картинки». Здесь есть старая застройка, новые ЖК и зелёные зоны; инфраструктура сложилась, а не обещана. Он подходит студентам, семьям и работающим людям, которым важны метро, магазины и школы рядом с домом, а не только вид из окна.</p>
       </div>
     </div>
     <div class="conclusion-final">
@@ -1715,9 +1719,10 @@
     sport2:{title:"Донспорт (Аквастудия)",tag:"Плавание",text:"Камерная аквастудия с подогреваемым крытым бассейном: дорожка 25 м, джакузи, аквааэробика и школа плавания — в том числе для малышей-грудничков. Подходит и взрослым, и детям. Рейтинг 4.6, работают по будням с 7 утра.",img:"images/sport-donsport.jpg"},
     sport3:{title:"NordWest CrossFit October",tag:"Кроссфит",text:"Аффилированный кроссфит-клуб для взрослых и детей, плюс тяжёлая атлетика. Первое занятие бесплатно. Абонемент стоит от 10 900 ₽ в год. Рейтинг 5.0.",img:"images/sport-crossfit.jpg"},
     sport4:{title:"Академия «Ленинградка»",tag:"Волейбол",text:"Спортивная школа по волейболу на улице Алабяна — вариант для тех, кто хочет командную игру. Открыта ежедневно с 7:00 до 23:00.",img:"images/sport-volleyball.jpg"},
-    food1:{title:"Бургер Кинг",tag:"Фастфуд",text:`<table class="food-table"><tr><td>Адрес:</td><td>ТЦ «Пассаж», рядом с метро «Октябрьское Поле»</td></tr><tr><td>Часы работы:</td><td>с 06:00 до 03:55 (завтраки до 11:00)</td></tr><tr><td>Средний чек:</td><td>150–170 ₽</td></tr><tr><td>Особенности:</td><td>Wi-Fi, кофе с собой</td></tr><tr><td>Рейтинг:</td><td>4,3</td></tr></table>`,img:"images/food-burgerking.jpg"},
-    food2:{title:"Точка вкуса",tag:"Столовая",text:`<table class="food-table"><tr><td>Адрес:</td><td>ул. Народного Ополчения, 40, корп. 4</td></tr><tr><td>Часы работы:</td><td>пн–пт с 09:00 до 16:00</td></tr><tr><td>Средний чек:</td><td>до 1000 ₽</td></tr><tr><td>Особенности:</td><td>Еда навынос, доставка</td></tr><tr><td>Рейтинг:</td><td>5,0</td></tr></table>`,img:"images/food-tochka-vkusa.jpg"},
-    food3:{title:"Кафе на Бирюзова, 32",tag:"Кафе",text:`<table class="food-table"><tr><td>Адрес:</td><td>ул. Маршала Бирюзова, 32</td></tr><tr><td>Часы работы:</td><td>ежедневно с 10:00 до 22:00</td></tr><tr><td>Средний чек:</td><td>1000–1700 ₽</td></tr><tr><td>Формат:</td><td>Быстрое питание, навынос, кофе с собой, доставка</td></tr><tr><td>Рейтинг:</td><td>4,0</td></tr></table>`,img:"images/food-biryuzova-32.jpg"},
+    /* === Карточки кафе: данные приведены в соответствие с карточками на странице === */
+    food1:{title:"Бургер Кинг",tag:"Фастфуд",text:`<table class="food-table"><tr><td>Адрес</td><td>Народного Ополчения, 47, корп. 1, рядом с метро «Октябрьское Поле»</td></tr><tr><td>Часы работы</td><td>06:00–03:00</td></tr><tr><td>Средний чек</td><td>До 1000 ₽</td></tr><tr><td>Кухня</td><td>Американская</td></tr><tr><td>Бронирование</td><td>Онлайн или по телефону</td></tr></table>`,img:"images/food-burgerking.jpg"},
+    food3:{title:"Вкусно и точка",tag:"Фастфуд",text:`<table class="food-table"><tr><td>Адрес</td><td>Москва, улица Маршала Бирюзова, 32</td></tr><tr><td>Часы работы</td><td>ежедневно с 10:00 до 22:00</td></tr><tr><td>Средний чек</td><td>1000–1700 ₽</td></tr><tr><td>Формат</td><td>быстрое питание, есть еда навынос, кофе с собой и доставка</td></tr><tr><td>Рейтинг</td><td>4,0</td></tr></table>`,img:"images/food-tochka-vkusa.jpg"},
+    food2:{title:"Точка вкуса",tag:"Столовая",text:`<table class="food-table"><tr><td>Адрес</td><td>ТЦ «Пассаж», рядом с метро «Октябрьское Поле»</td></tr><tr><td>Часы работы</td><td>с 06:00 до 03:55 (завтраки до 11:00)</td></tr><tr><td>Средний чек</td><td>150–170 ₽</td></tr><tr><td>Особенности</td><td>Wi-Fi, кофе с собой</td></tr><tr><td>Рейтинг</td><td>4,3</td></tr></table>`,img:"images/food-biryuzova-32.jpg"},
     sight1:{title:"Памятник-танк Т-34",tag:"Мемориал",text:"Легендарный танк Т-34-85 установлен в сквере на пересечении улиц Маршала Бирюзова и Народного Ополчения. Посвящён 40-летию Победы в Великой Отечественной войне.",img:"images/sight-t34.jpg"},
     sight2:{title:"Стела маршалу П. С. Рыбалко",tag:"Памятник",text:"Стела установлена в честь дважды Героя Советского Союза, маршала бронетанковых войск Павла Семёновича Рыбалко.",img:"images/sight-rybalko.jpg"},
     sight3:{title:"Исторические ворота В/Ч 67748",tag:"Памятник",text:"Исторические ворота воинской части, напоминающие о военном прошлом Октябрьского Поля.",img:"images/sight-vorota.jpg"},
